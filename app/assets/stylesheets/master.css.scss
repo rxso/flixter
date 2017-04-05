@@ -1,18 +1,69 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
-@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100, 300, 400, 700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
 
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+h1 {
+    color: #fffeee;
+    font-family: "Bungee Hairline", Helvetica;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+h4 {
+    color: #fffeee;
+    font-family: "Poppins", Helvetica;
+    text-transform: uppercase;
+    //font-weight: bold;
+    //text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+h6 {
+    color: #fffeee;
+    font-family: "Playfair Display SC", Helvetica;
+}
+
+.btn.btn-success {
+     font-family: "Poppins", san-serif;
+     font-weight: bold;
+     background-color: #ffce00;
+     border: none;
+     border-radius: 50px;
+}
+
+.frosty {
+    background: rgba(245, 96, 43, 0.6);
+    color: #ffffff;
+}
+
+.hero {
+    background: image_url('hero.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 370px;
+    box-shadow: 0px 3px 8px #2a2a2a;
+}
 
 .navbar {
-    font-family: "Palanquin Dark", san-serif;
+    font-family: "Bungee", san-serif;
     box-shadow: 0px 1px 3px #2a2a2a;
     background: image_url('navbar.png');
 }
 
 
 a.navbar-brand {
-    font-family: "Fascinate Inline", san-serif;
+    font-family: "Bungee", san-serif;
     font-size: 40px;
     font-weight: 100;
     color: #000000;
