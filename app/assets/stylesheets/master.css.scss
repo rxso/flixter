@@ -19,6 +19,7 @@ h1 {
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
+
 h4 {
     color: #fffeee;
     font-family: "Poppins", Helvetica;
@@ -32,6 +33,15 @@ h6 {
     font-family: "Playfair Display SC", Helvetica;
 }
 
+p {
+    font-family: "Bungee Hairline", Helvetica, san-serif;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+body {
+    background: image_url('bkg.jpg');
+}
+
 .btn.btn-success {
      font-family: "Poppins", san-serif;
      font-weight: bold;
@@ -40,9 +50,54 @@ h6 {
      border-radius: 50px;
 }
 
+.feature {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer {
+  //position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000000;
+  text-align: center;
+  color: #fffeee;
+}
+
 .frosty {
-    background: rgba(245, 96, 43, 0.6);
+    background: rgba(178, 177, 166, 0.6);
     color: #ffffff;
+    padding: 25px;
+}
+
+.frosty1 {
+    background: rgba(246, 84, 106, 0.9);
+    color: #fffeee;
+    padding: 10px;
+    margin: 15px;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    border-radius: 5px;
+}
+
+.frosty2 {
+    background: rgba(78, 197, 138, 0.9);
+    color: #fffeee;
+    padding: 10px;
+    margin: 15px;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    border-radius: 5px;
+}
+
+.frosty3 {
+    background: rgba(255, 155, 0, 0.9);
+    color: #fffeee;
+    padding: 10px;
+    margin: 15px;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    border-radius: 5px;
 }
 
 .hero {
