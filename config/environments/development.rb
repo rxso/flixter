@@ -11,6 +11,10 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+  
+  #The action mailer was giving an error when line 17 is uncommented
+  config.action_mailer.default_url_options = { host: 'localhost:8080' }
+  #config.action.mailer.delivery_method = :test 
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?

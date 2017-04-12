@@ -13,6 +13,15 @@ gem 'rails', '~> 5.0.2'
 # Use bootstrap 4
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+#Add form to page
+gem 'simple_form'
+
+#Add authentication to application
+gem 'devise'
+
+#add hamburger menu animation
+gem 'hamburgers'
+
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

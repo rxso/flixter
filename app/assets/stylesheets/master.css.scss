@@ -14,19 +14,30 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 h1 {
     color: #fffeee;
-    font-family: "Bungee Hairline", Helvetica;
+    font-family: "Poppins", Helvetica;
     font-weight: bold;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    
 }
 
 
 h4 {
     color: #fffeee;
+    font-family: "Bungee Hairline", Helvetica;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    //font-weight: bold;
+}
+
+h4 {
+    color: #fffeee;
     font-family: "Poppins", Helvetica;
     text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
     //font-weight: bold;
-    //text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
+
+
 
 h6 {
     color: #fffeee;
@@ -59,14 +70,14 @@ body {
 
 
 .frosty {
-    background: rgba(252, 74, 26, 0.5);
+    background: rgba(255, 193, 37, 0.7);
     color: #eeeeee;
     padding: 25px;
 }
 
 .frosty_sm {
-    background: rgba(25, 86, 125, 0.6);
-    color: #eeeeee;
+    background: rgba(3, 57, 108, 0.9);
+    color: #fffeee;
     padding: 10px;
     margin: 15px;
     //text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
@@ -116,5 +127,5 @@ a.navbar-brand {
     font-family: "Bungee", san-serif;
     font-size: 40px;
     font-weight: 100;
-    color: #000000;
+    color: #03396C;
 }

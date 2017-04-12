@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+jQuery(function($) {
+    $('button.hamburger').click(function() {
+        $(this).toggleClass('is-active');
+    });
+});
