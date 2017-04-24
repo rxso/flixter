@@ -7,9 +7,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100, 300, 400, 700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400i');
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
-
-h1, h2, h3, h4, h5, h6, .navbar {
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar {
+    margin: 0;
 }
 
 h1 {
@@ -17,15 +22,12 @@ h1 {
     font-family: "Poppins", Helvetica;
     font-weight: bold;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-    
 }
 
 h2 {
     color: #D52854;
     font-family: "Poppins", Helvetica;
-    
 }
-
 
 h4 {
     color: #fffeee;
@@ -38,9 +40,7 @@ h4 {
 h5 {
     color: #D52854;
     font-family: "Poppins", Helvetica;
- 
 }
-
 
 h6 {
     color: #fffeee;
@@ -67,68 +67,67 @@ body {
     padding: 10px;
 }
 
-.booyah-box h2, .booyah-box h1 {
+.booyah-box h2,
+.booyah-box h1 {
     margin: 10px;
 }
 
 .btn.btn-success {
-     font-family: "Poppins", san-serif;
-     font-weight: bold;
-     background-color: #ffce00;
-     border: none;
-     border-radius: 50px;
-     margin: 5px;
-     color: #fffeee;
-     line-height: 2em;
+    font-family: "Poppins", san-serif;
+    font-weight: bold;
+    background-color: #ffce00;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    color: #fffeee;
+    line-height: 2em;
 }
 
 .btn.btn-signin {
-     font-family: "Poppins", san-serif;
-     font-weight: bold;
-     background-color: #ffce00;
-     border: none;
-     //border-radius: 25px;
-     margin: 5px;
-     color: #fffeee;
-     padding: 1px;
-     line-height: 4rem;
-     width: 4rem;
-     height: 4rem;
+    font-family: "Poppins", san-serif;
+    font-weight: bold;
+    background-color: #ffce00;
+    border: none;
+    //border-radius: 25px;
+    margin: 5px;
+    color: #fffeee;
+    padding: 1px;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .btn.btn-close {
-     font-family: "Poppins", san-serif;
-     font-weight: bold;
-     background-color: #D52854;
-     border: none;
-     border-radius: 50px;
-     margin: 5px;
-     color: #fffeee;
-     line-height: 4rem;
-     width: 4rem;
-     height: 4rem;
+    font-family: "Poppins", san-serif;
+    font-weight: bold;
+    background-color: #D52854;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    color: #fffeee;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .btn.btn-join {
-     font-family: "Poppins", san-serif;
-     font-weight: bold;
-     background-color: #F8522C;
-     border: none;
-     border-radius: 50px;
-     margin: 5px;
-     color: #fffeee;
-     line-height: 4rem;
-     width: 4rem;
-     height: 4rem;
+    font-family: "Poppins", san-serif;
+    font-weight: bold;
+    background-color: #F8522C;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    color: #fffeee;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
 }
-
 
 .feature {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
 }
-
 
 .frosty {
     background: rgba(255, 193, 37, 0.7);
@@ -145,7 +144,15 @@ body {
     border-radius: 5px;
 }
 
-
+.help-block {
+    color: #ff3333;
+    background-color: #ffeeee;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+    font-weight: 400;
+    font-family: Roboto Slab, "Helvetica,", san-serif;
+    margin: 10px;
+}
 
 .hero {
     background: image_url('hero.jpg') no-repeat center center fixed;
@@ -166,7 +173,6 @@ body {
     box-shadow: 0px 1px 3px #2a2a2a;
     background: image_url('navbar.png');
 }
-
 
 a.navbar-brand {
     font-family: "Bungee", san-serif;
