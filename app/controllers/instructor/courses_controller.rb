@@ -1,4 +1,6 @@
 class Instructor::CoursesController < ApplicationController
+    # !!!---INSTRUCTOR CONTROLLER---!!! 
+    
     #Before action below ensures only logged in users can create courses
     before_action :authenticate_user!
     #With all new actions we create an empty template to represent the item in this case a course
