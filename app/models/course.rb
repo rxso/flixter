@@ -1,6 +1,7 @@
 class Course < ApplicationRecord
     #This is plumbing - tells us courses are proprietary to users
     belongs_to :user
+    has_many :sections
     
     validates :title, presence: true 
     validates :description, presence: true
