@@ -22,6 +22,9 @@ gem 'devise'
 #Add image uploading
 gem 'carrierwave', '~> 1.0'
 
+#Add image cropping 
+gem "mini_magick"
+
 #add hamburger menu animation
 gem 'hamburgers'
 
