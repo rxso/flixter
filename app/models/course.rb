@@ -1,5 +1,7 @@
 class Course < ApplicationRecord
-    #This is plumbing - tells us courses are proprietary to users
+
+mount_uploader :image, ImageUploader
+    
     belongs_to :user
     has_many :sections
     

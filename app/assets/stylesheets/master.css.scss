@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
-@import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100, 300, 400, 700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400i');
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre');
 h1,
 h2,
 h3,
@@ -18,37 +18,53 @@ h6,
 }
 
 h1 {
-    color: #000000;
+    color: #ff514a;
     font-family: "Poppins", san-serif;
 }
 
 h2 {
-    color: #ff0000;
+    color: #fffeee;
     font-family: "Poppins", Helvetica;
 }
 
 h4 {
     color: #fffeee;
     font-family: "Poppins", Helvetica;
-    text-transform: uppercase;
-    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-    //font-weight: bold;
 }
 
 h5 {
-    color: #D52854;
+    color: #ff514a;
     font-family: "Poppins", Helvetica;
 }
 
 h6 {
     color: #fffeee;
-    font-family: "Playfair Display SC", Helvetica;
+    font-family: "Roboto Slab", Helvetica;
+}
+
+a:link {
+    color: #ff514a;
+}
+
+a:visited {
+    color: #ff514a;
 }
 
 p {
     font-family: "Roboto Slab", Helvetica, san-serif;
     //text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
     text-align: left;
+    color: #9ac0cd;
+}
+
+.badge.badge-pill.badge-info {
+    background-color: #ff514a;
+    color: #fffeee;
+}
+
+.badge.badge-pill.badge-success {
+    background-color: #11dbad;
+    color: #fffeee !important;
 }
 
 body {
@@ -70,10 +86,18 @@ body {
     margin: 10px;
 }
 
+.btn.btn-info {
+    font-family: "Poppins", san-serif;
+    background-color: #ff514a;
+    color: #fffeee;
+    border: none;
+    border-radius: 25px;
+}
+
 .btn.btn-success {
     font-family: "Poppins", san-serif;
     font-weight: bold;
-    background-color: #ffce00;
+    background-color: #ff514a;
     border: none;
     border-radius: 50px;
     margin: 5px;
@@ -81,10 +105,15 @@ body {
     line-height: 2em;
 }
 
+.btn.btn-outline-success {
+    color: #ff514a;
+    border-color: #ff514a;
+}
+
 .btn.btn-signin {
     font-family: "Poppins", san-serif;
     font-weight: bold;
-    background-color: #ffce00;
+    background-color: #ff514a;
     border: none;
     //border-radius: 25px;
     margin: 5px;
@@ -98,7 +127,7 @@ body {
 .btn.btn-close {
     font-family: "Poppins", san-serif;
     font-weight: bold;
-    background-color: #D52854;
+    background-color: #ff514a;
     border: none;
     border-radius: 50px;
     margin: 5px;
@@ -111,7 +140,7 @@ body {
 .btn.btn-join {
     font-family: "Poppins", san-serif;
     font-weight: bold;
-    background-color: #F8522C;
+    background-color: #ff514a;
     border: none;
     border-radius: 50px;
     margin: 5px;
@@ -132,13 +161,13 @@ body {
 }
 
 .frosty {
-    background: rgba(240, 248, 255, 0.7);
+    background: rgba(51, 80, 90, 0.7);
     color: #eeeeee;
     padding: 25px;
 }
 
 .frosty_sm {
-    background: rgba(3, 57, 108, 0.9);
+    background: rgba(255, 81, 74, 0.9);
     color: #fffeee;
     padding: 10px;
     margin: 15px;
@@ -180,5 +209,17 @@ a.navbar-brand {
     font-family: "Bungee", san-serif;
     font-size: 40px;
     font-weight: 100;
-    color: #03396C;
+    color: #ff514a;
+}
+
+.description-text {
+    font-family: "Roboto Slab", Helvetica, san-serif;
+    //text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    text-align: left;
+    color: #9ac0cd;
+}
+
+a:hover {
+    color: #ffce00;
+    text-decoration: none;
 }

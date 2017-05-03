@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root "static_pages#index"
   # This is how you hook up a namespace controller in the router 
   resources :courses, only: [:index, :show]
+  resources :lessons, only: [:show]
   
   namespace :instructor do 
     resources :sections, only: [] do

@@ -19,6 +19,9 @@ gem 'simple_form'
 #Add authentication to application
 gem 'devise'
 
+#Add image uploading
+gem 'carrierwave', '~> 1.0'
+
 #add hamburger menu animation
 gem 'hamburgers'
 
