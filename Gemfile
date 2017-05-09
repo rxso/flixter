@@ -22,6 +22,15 @@ gem 'devise'
 #Add image uploading
 gem 'carrierwave', '~> 1.0'
 
+#Add AWS compatibility 
+gem 'carrierwave-aws'
+
+#secure configuration 
+gem 'figaro'
+
+#carrierwave to AWS S3 communication
+gem 'fog-aws'
+
 #Add image cropping 
 gem "mini_magick"
 
