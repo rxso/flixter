@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100, 300, 400, 700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400i');
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
-@import url('https://fonts.googleapis.com/css?family=Miriam+Libre');
 h1,
 h2,
 h3,
@@ -18,13 +18,13 @@ h6,
 }
 
 h1 {
-    color: #ff514a;
+    color: #001428;
     font-family: "Poppins", san-serif;
 }
 
 h2 {
     color: #fffeee;
-    font-family: "Poppins", Helvetica;
+    font-family: "Rubik", Helvetica;
 }
 
 h4 {
@@ -34,12 +34,12 @@ h4 {
 
 h5 {
     color: #ff514a;
-    font-family: "Poppins", Helvetica;
+    font-family: "Rubik", Helvetica;
 }
 
 h6 {
     color: #fffeee;
-    font-family: "Roboto Slab", Helvetica;
+    font-family: "Rubik", Helvetica;
 }
 
 a:link {
@@ -51,19 +51,24 @@ a:visited {
 }
 
 p {
-    font-family: "Roboto Slab", Helvetica, san-serif;
+    font-family: "Rubik", Helvetica, san-serif;
     //text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
     text-align: left;
     color: #9ac0cd;
 }
 
 .badge.badge-pill.badge-info {
-    background-color: #ff514a;
+    background-color: #00d2ff;
     color: #fffeee;
 }
 
 .badge.badge-pill.badge-success {
     background-color: #11dbad;
+    color: #fffeee !important;
+}
+
+.badge.badge-pill.badge-warning {
+    background-color: #dd24e9;
     color: #fffeee !important;
 }
 
@@ -181,7 +186,7 @@ body {
     border-radius: 3px;
     padding: 2px 8px 2px 8px;
     font-weight: 400;
-    font-family: Roboto Slab, "Helvetica,", san-serif;
+    font-family: "Rubik", "Helvetica", san-serif;
     margin: 10px;
 }
 
@@ -197,6 +202,30 @@ body {
 
 .image {
     padding: 15px;
+}
+
+.lesson {
+    background-color: #001428;
+    margin-top: 10px;
+    height: 130px;
+}
+
+.lesson a {
+    color: #fffeee;
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.lesson a b {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.section {
+    border: 1px solid;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    padding: 20px;
 }
 
 .navbar {
