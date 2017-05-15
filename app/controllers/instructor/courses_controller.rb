@@ -1,5 +1,5 @@
 class Instructor::CoursesController < ApplicationController
-    # !!!---INSTRUCTOR CONTROLLER---!!! 
+    # !!!---INSTRUCTOR COURSES CONTROLLER---!!! 
     
     before_action :authenticate_user!
     before_action :require_authorized_for_current_course, only: [:show]
