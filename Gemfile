@@ -43,6 +43,9 @@ gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 
+# Rank model allows lessons to be moved
+gem 'ranked-model'
+
 #stripe is for payment processing
 gem 'stripe'
 
