@@ -1,31 +1,48 @@
+<script>
+  $(function(){
+    $('.lessons').sortable({
+      update: function( event, ui ) {
+        alert(ui.item.index());
+      }
+    });
+  });
+</script>
+
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
+  
+  <br />
   <%= image_tag current_course.image, class: 'img-fluid' %>
   <br />
-  <%= link_to 'Student View', course_path(current_course), class: 'float-right btn btn-info btn-sm' %>
   <br class="clr" />
-
-  <div class="text-center">
-    <%= link_to '+ Section', new_instructor_course_section_path(current_course), class: 'float-right btn btn-info btn-sm' %>
-  </div>
-
   <ul>
     <% current_course.sections.each do |section| %>
-      <li>
-        <%= section.title %>
+      <div class="section">
         <%= link_to '+ Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-info btn-sm' %>
-        <ul>
+        <h3><%= section.title %></h3>
+        <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
-            <l1>
-              <b><%= lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
-            </li>
+            <div class="booyah-box">
+              <div class="lesson text-center">
+                <br />
+                <%= link_to lesson_path(lesson) do %>
+                  <b><%= lesson.title %></b>
+                  <br />
+                  -
+                  <%= lesson.subtitle %>
+                <br />
+                <% end %>
+                <br />
+              </div>
+            </div>
           <% end %>
         </ul>
         <br class="clr" />
-      </li>
+      </div>
     <% end %>
+    <%= link_to 'Student View', course_path(current_course), class: 'float-right btn btn-info btn-sm' %>
+  <%= link_to '+ Section', new_instructor_course_section_path(current_course), class: 'float-right btn btn-info btn-sm' %>
   </ul>
+  
 </div>
