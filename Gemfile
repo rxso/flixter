@@ -11,8 +11,7 @@ gem 'rails', '~> 5.0.2'
 
 # Use postgresql as the database for Active Record
 
-# Use bootstrap 4
-gem 'bootstrap', '~> 4.0.0.alpha6'
+
 
 #Add form to page
 gem 'simple_form'
@@ -95,3 +94,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Use bootstrap 4
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
