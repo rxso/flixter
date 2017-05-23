@@ -11,7 +11,14 @@ class Instructor::LessonsController < ApplicationController
     redirect_to instructor_course_path(current_section.course)
   end 
   
+  def update
+  end
+  
   private
+  
+  def current_lesson
+    @current_lesson ||= Lesson.find(params[:id])
+  end
   
   def require_authorized_for_current_section
     if current_section.course.user != current_user

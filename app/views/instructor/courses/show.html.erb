@@ -2,7 +2,7 @@
   $(function(){
     $('.lessons').sortable({
       update: function( event, ui ) {
-        alert(ui.item.index());
+        alert("LessonId: " + ui.item.data('item-id') + " Index: " + ui.item.index());
       }
     });
   });
@@ -23,19 +23,20 @@
         <h3><%= section.title %></h3>
         <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
-            <div class="booyah-box">
-              <div class="lesson text-center">
-                <br />
-                <%= link_to lesson_path(lesson) do %>
-                  <b><%= lesson.title %></b>
+            <li data-item-id=<%= lesson.id %>>
+              <div class="booyah-box">
+                <div class="lesson text-center">
                   <br />
-                  -
-                  <%= lesson.subtitle %>
-                <br />
-                <% end %>
-                <br />
+                    <%= link_to lesson_path(lesson) do %>
+                    <b><%= lesson.title %></b>
+                    <br />
+                    -
+                    <%= lesson.subtitle %>
+                    <% end %>
+                  <br />
+                </div>
               </div>
-            </div>
+            </li>
           <% end %>
         </ul>
         <br class="clr" />
@@ -43,6 +44,7 @@
     <% end %>
     <%= link_to 'Student View', course_path(current_course), class: 'float-right btn btn-info btn-sm' %>
   <%= link_to '+ Section', new_instructor_course_section_path(current_course), class: 'float-right btn btn-info btn-sm' %>
+  
   </ul>
   
 </div>
