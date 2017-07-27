@@ -30,6 +30,9 @@ gem 'figaro'
 #carrierwave to AWS S3 communication
 gem 'fog-aws'
 
+#fontawesome allows for CSS icons on webpage
+gem 'font-awesome-rails'
+
 #Add image cropping 
 gem "mini_magick"
 
