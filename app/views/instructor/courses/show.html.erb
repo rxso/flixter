@@ -28,8 +28,11 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-left"><%= current_course.title %></h1>
   <div class="menu-buttons">
-    <%= link_to 'Student View', course_path(current_course), class: 'float-right btn btn-info btn-sm' %>
-    <%= link_to '+ Section', new_instructor_course_section_path(current_course), class: 'float-right btn btn-info btn-sm' %>
+    <%= link_to 'Student View', course_path(current_course), class: 'float-left btn btn-info btn-sm' %>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#newSectionModal">
+      Add Section
+    </button>
   </div>
   <br />
   <%= image_tag current_course.image, class: 'img-fluid' %>
@@ -73,4 +76,31 @@
   
   </ul>
   
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newSectionModalLabel">Add a new section</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
+        <div class="modal-body">
+          <%= f.input :title %>
+          <br />
+          <%= f.submit "+ Add", class: 'btn btn-info btn-sm' %>
+          <br />
+          <br />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
