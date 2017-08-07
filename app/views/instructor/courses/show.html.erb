@@ -1,7 +1,7 @@
 <script>
   $(function() {
-    $('.new-lesson-button').click(function() {
-      var lessonUrl = $( event.target).data('lesson-url') );
+    $('.new-lesson-button').click(function(event) {
+      var lessonUrl = $( event.target).data('lesson-url');
       $('#newLessonForm').attr('action', lessonUrl);
     });
     
@@ -57,7 +57,7 @@
         </button>
         <br class="clr">
         <br class="clr">
-        <%= link_to '+ Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-info btn-sm' %>
+        
         <div class="section">
           <ul class="lessons">
             <% section.lessons.rank(:row_order).each do |lesson| %>
